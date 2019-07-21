@@ -47,13 +47,13 @@ function toggleVideo() {
 
 
 
-/*nextImageButton.addEventListener("click", function(){
+nextImageButton.addEventListener("click", function(){
     nextImage();
 });
 
 trackButton.addEventListener("click", function(){
     toggleVideo();
-});*/
+});
 
 function nextImage() {
 
