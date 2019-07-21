@@ -2,8 +2,6 @@ const video = document.getElementById("myvideo");
 const handimg = document.getElementById("handimage");
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
-let trackButton = document.getElementById("trackbutton");
-let nextImageButton = document.getElementById("nextimagebutton");
 let updateNote = document.getElementById("updatenote");
 
 let imgindex = 1
@@ -44,16 +42,6 @@ function toggleVideo() {
         updateNote.innerText = "Video stopped"
     }
 }
-
-
-
-nextImageButton.addEventListener("click", function(){
-    nextImage();
-});
-
-trackButton.addEventListener("click", function(){
-    toggleVideo();
-});
 
 function nextImage() {
 
