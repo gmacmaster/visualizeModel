@@ -52,7 +52,7 @@ nextImageButton.addEventListener("click", function(){
 });
 
 trackButton.addEventListener("click", function(){
-    toggleVideo();
+    window.location.href='https://gmacmaster.github.io/helpTrain';
 });
 
 function nextImage() {
@@ -87,7 +87,8 @@ handTrack.load(modelParams).then(lmodel => {
     // detect objects in the image.
     model = lmodel
     updateNote.innerText = "Loaded Model!"
-    runDetectionImage(handimg)
+    runDetectionImage(video)
+    toggleVideo();
     trackButton.disabled = false
     nextImageButton.disabled = false
 });
